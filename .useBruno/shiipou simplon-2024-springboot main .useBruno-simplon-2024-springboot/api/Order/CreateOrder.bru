@@ -1,0 +1,21 @@
+meta {
+  name: CreateOrder
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/order
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "card": 1
+  }
+}
+
+body:multipart-form {
+  : 
+}

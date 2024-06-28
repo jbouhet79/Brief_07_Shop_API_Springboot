@@ -1,0 +1,18 @@
+meta {
+  name: CreateCard
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/api/card
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "product": 1,
+    "user": 1
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: PutProduct
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://localhost:8080/api/card/update/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "user": 1,
+    "product": 2
+  }
+}

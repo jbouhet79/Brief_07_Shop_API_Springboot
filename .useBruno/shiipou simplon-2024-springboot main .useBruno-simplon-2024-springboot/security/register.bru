@@ -1,0 +1,18 @@
+meta {
+  name: register
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/register
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  username: {{user_login}}
+  password: {{user_pass}}
+  passwordConfirm: {{user_pass}}
+  email: {{user_email}}
+}
